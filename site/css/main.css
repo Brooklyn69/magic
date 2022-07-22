@@ -1,0 +1,499 @@
+/* Спецификация */
+
+@font-face {
+    font-family: 'Gill Sans MT Ext Condensed';
+    src: url('GillSansMT-ExtraCondensedBold.woff2') format('woff2'),
+    url('GillSansMT-ExtraCondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('GillSansMT.woff2') format('woff2'),
+    url('GillSansMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+	font-size: 16px;
+    margin: 0;
+}
+
+button,
+button:hover,
+button:focus {
+	font-family: gill sans;
+	outline: none;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #26272d;
+	line-height: 1.2em;
+}
+
+p {
+	color: #8c8f94;
+    line-height: 26px;
+}
+
+ul,li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+ 	text-decoration: none;
+    color: #26272d;
+}
+
+a:hover {
+ 	text-decoration: none;
+}
+
+.btn {
+ 	border-radius: 21px;
+ 	background-color: rgba(255, 86, 33, 1);
+ 	color: #ffffff;
+ 	font-weight: normal;
+ 	padding: 15px, 52px, 12px, 26px;
+ 	display: block;
+ 	width: 202px;
+ 	text-align: center;
+ 	transition: all 0.5s ease;
+}
+
+.btn:hover {
+ 	background: #5D35FF;
+ 	color: #ffffff;
+}
+
+.btn:active {
+ 	background: #1c00bf;
+ 	box-shadow: none;
+}
+
+ .iphone_features, .app-screen, .map_jackpots {
+    transition: all 0.5s ease;
+}
+
+section:hover .iphone_features,
+header:hover .app-screen,
+section:hover .map_jackpots {
+    transform: scale(1.02) ;
+    -webkit-transform: scale(1.02) ;
+    -moz-transform: scale(1.02) ;
+}
+
+/* Первый экран */
+
+.header {
+	background: #d0d6e9 url('../img/rohit-tandon-9wg5jCEPBsw-unsplash.jpg.png') no-repeat center bottom / cover;
+	padding-top: 44px;
+}
+
+.menu-header {
+    background-color: transparent;
+}
+
+.menu-header__btn {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+}
+
+.menu-header__btn:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.menu__link {
+    color: #26272d;
+}
+
+.menu__item {
+    margin-right: 45px;
+}
+
+.logo {
+    display: block;
+    background: url('../img/logo.png') no-repeat;
+    width: 133px;
+    height: 15px;
+}
+.header-btn {
+    width: 132px;
+    height: 42px;
+    background-color: #267df4;
+    color: #ffffff;
+    border-radius: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.header-btn::before {
+    content: '';
+    display: block;
+    background: url('../img/Apple_Icon.png');
+    width: 17px;
+    height: 20px;
+    margin-right: 15px;
+}
+.header-btn:hover {
+    color: #fff;
+    background-color: #5D35FF;
+    box-shadow: 0 8px 20px rgba(38 125 244 / 25%);
+
+}
+.header-btn:active {
+    background: #1c00bf;
+    box-shadow: none;
+}
+.helper__item {
+    margin-right: 33px;
+}
+.offer {
+    max-width: 800px;
+    text-align: center;
+    margin: 132px auto 0;
+}
+.offer__title {
+    margin-bottom: 41px;
+}
+.offer__text {
+    margin-bottom: 66px;
+}
+.offer__btn {
+    max-width: 205px;
+    border-radius: 25px;
+    border: 1px solid #26272d;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 10px 10px 42px;
+    transition: all 0.5s ease;
+
+
+}
+.offer__btn::before {
+    content: '';
+    display: block;
+    background: url('../img/Play_Icon.svg');
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+}
+.offer__btn:hover {
+    box-shadow: 0 8px 20px rgba(0 0 10 / 25%);
+    color: #000;
+}
+.offer__btn:active {
+    box-shadow: none;
+}
+.app-screen {
+    background: url('../img/iPhone_6.png') no-repeat center top / cover;
+    max-width: 369px;
+    height: 455px;
+    margin: 0 auto;
+    margin-top: 66px;
+}
+
+
+/*  Вторая секция  */
+
+.specs-item {
+    padding-top: 122px;
+    padding-bottom: 116px;
+}
+
+.specs-item__icon_lock {
+    background: url('../img/Lock_Icon.svg');
+    width: 42px;
+    height: 51px;
+    margin-bottom: 45px;
+}
+.specs-item__title {
+    margin-bottom: 49px;
+}
+.specs-item__text {
+    font-size: 18px;
+    line-height: 26px;
+}
+.specs-item__text:not(:last-of-type) {
+    margin-bottom: 35px;
+}
+
+.specs-item__icon_clock {
+    background: url('../img/Clock_Icon.svg');
+    max-width: 41px;
+    height: 47px;
+    margin-bottom: 46px;
+}
+
+
+/*  Третья секция  */
+
+
+
+.iphone_features {
+    background: url('../img/iPhone_6.svg') no-repeat center center / contain;
+    width: 100%;
+    height: 548px;
+}
+.section-title__heading {
+    line-height: 50px;
+    padding-bottom: 76px;
+}
+
+.section-title__text {
+    line-height: 28px;
+}
+.section-title__text:not(:last-of-type) {
+    padding-bottom: 25px;
+}
+
+.section-title__btns {
+   margin-top: 75px; 
+}
+
+.section-title__btn_primary {
+   height: 42px;
+
+}
+
+.section-title__btn_primary::after {
+    content:'';
+    display: block;
+    background: url('../img/Arrow_Icon.svg');
+    width: 13px;
+    height: 12px;
+    margin-left: 52px;
+}
+.section-title__btn_primary:hover {
+    box-shadow: 0 8px 20px rgba(38 125 244 / 25%);
+}
+.section-title__btn_primary:active {
+    box-shadow: none;
+}
+
+.section-title__btn_secondary {
+    max-width: 142px;
+    height: 42px;
+    background: #ffffff;
+    color: #26272d;
+    border: 1px solid #26272d;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+}
+.section-title__btn_secondary:hover {
+    border: none;
+    box-shadow: 0 8px 20px rgba(38 125 244 / 25%);
+}
+.section-title__btn_secondary:active {
+   box-shadow: none; 
+}
+
+
+/*  Четвертая сеция  */
+
+.jackpots {
+    padding-top: 171px;
+}
+
+.about__title {
+    margin-bottom: 67px;
+}
+.about__text:not(:last-of-type) {
+     padding-bottom: 25px;
+}
+.about-partners__title {
+    margin-bottom: 31px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.about__logo-dropbox {
+    content: '';
+    display: block;
+    background: url('../img/Dropbox_Logo.png');
+    width: 125px;
+    height: 34px;
+}
+
+.about__logo-evernote {
+    content: '';
+    display: block;
+    background: url('../img/Evernote_Logo.png');
+    width: 138px;
+    height: 35px;
+    margin-left: 31px;
+}
+
+.map_jackpots {
+    background: url('../img/World_Map.png') no-repeat center / contain ;
+    max-width: 100%;
+    height: 401px;
+}
+
+/*  Футер  */
+
+.footer {
+    padding-top: 243px;
+    padding-bottom: 235px;
+}
+
+.logo__footer {
+   margin-bottom: 31px; 
+}
+.Fullviewapp__text {
+    font-size: 14px;
+}
+.Fullviewapp__btn {
+    content: '';
+    display: block;
+    background: url('../img/Download.png');
+    width: 140px;
+    height: 42px;
+    margin-top: 28px;
+}
+.Learn__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    line-height: 22px;
+}
+.Learn__text_item {
+    color: #8c8f94;
+    font-size: 16px;
+}
+.Learn__text_item:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.about-us__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    line-height: 22px;
+}
+.about-us__text_item {
+    color: #8c8f94;
+    font-size: 16px;
+}
+
+.about-us__text_item:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.support__title {
+     font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    line-height: 22px;
+}
+
+.support__text_item {
+    color: #8c8f94;
+    font-size: 16px;
+}
+
+.support__text_item:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+/*  Responsive  */
+
+@media (max-width: 992px) {
+    .menu {
+        margin-top: 30px;
+    }
+    .logo {
+        margin-left: auto;
+    }
+    .header-btn {
+     margin-top: 30px;
+    }
+    .section-title__btn_primary {
+        margin-bottom: ;
+    }
+    .about-partners_logo {
+        margin-bottom: 50px;
+    }
+    .specs-item {
+       padding-bottom: 0; 
+    }
+    .section-title__heading {
+        line-height: 35px;
+        padding-bottom: 34px;
+    }
+    .jackpots {
+        padding-top: 110px;
+    }
+
+    .about__title {
+        margin-bottom: 56px;
+    }
+    .footer {
+        padding-top: 180px;
+        padding-bottom: 100px;
+    }
+    .map_jackpots {
+
+    }
+    .Fullviewapp {
+        margin-bottom: 50px;
+    }
+    .Learn {
+        margin-bottom: 50px;
+
+    }
+    .about-us {
+        margin-bottom: 50px;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .iphone_features {
+        height: 380px;
+
+    }
+    .footer {
+        padding-top: 160px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .app-screen {
+        height: 330px;
+        
+    }
+
+    .section-title__btn_primary {
+        margin-bottom: 40px;
+    }
+    .about__logo-evernote {
+        margin-left: 22px;
+    }
+    .about-partners_logo {
+        flex-wrap: wrap;
+
+    }
+    .about__logo-dropbox {
+        margin: 0 auto;
+    }
+    .about__logo-evernote {
+        margin: 0 auto;
+    }
+}
